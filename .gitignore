@@ -1,0 +1,9 @@
+
+*.png
+!ThaumicScience.png
+!TaumometrPNG.png
+*.psd
+!150px-Таумометр_(Thaumcraft_6).psd
+*.jpg
+*.jpeg
+*.mhtml
