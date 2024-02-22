@@ -15,11 +15,11 @@
 }
 
 body {
-    background-color: #841ca1;
+    background-color: #3c0e49;
 }
 body header {
-    background-color: #ffcaed;
-    height: 100px;                    g
+    background-color: #e0b2ff;;
+    height: 150px;                    
     width: 100%;
     top: 0;
 }
@@ -28,18 +28,26 @@ body header {
     display: inline-flex;
 }
 .LogotypeImg {
-    margin-left: 4%;
     border: none;
+    display: inline-flex;
+    margin-top: 1.7%;
+    margin-left: 5px;
 }
-.LogotypeFull h1 {
-    margin-top: 3.5%;
+.LogotypeImg * {
+    margin-top: 2.2%;
 }
 .LogotypeMore {
-    display: flex;
+    display: block;
+    margin-left: 2%;
 }
 
 /*Поле поиска*/
-* {box-sizing: border-box;}
+* {box-sizing: 
+    border-box;
+}
+.LogotypeSearch {
+    display: flex;
+}
 .LogotypeSearch form {
     position: relative;
     width: 300px;
@@ -74,4 +82,12 @@ body header {
     width: 300px;
     z-index: 1;
     border-bottom: 2px solid #F9F0DA;
+}
+
+.Navigation * {
+    color: #000000;
+    display: flex;
+    grid-template-columns: repeat(auto-fit,minmax(2ch,max-content));
+    line-height: 1.25;
+    align-items: center;
 }
