@@ -1,52 +1,61 @@
-.roboto-regular {
+.roboto-regular{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.roboto-light {
+.roboto-light{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-.roboto-bold {
+.roboto-bold{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-body {
-    background-color: #841ca1;
+body{
+    background-color: #3c0e49;
 }
-body header {
-    background-color: #ffcaed;
-    height: 100px;                    g
+body header{
+    background-color: #e0b2ff;
+    height: 130px;
     width: 100%;
     top: 0;
+    margin-bottom: 0;
 }
 
-.LogotypeFull {
+.LogotypeFull{
     display: inline-flex;
+    margin-bottom: 0;
+    height: 80%;
 }
-.LogotypeImg {
-    margin-left: 4%;
+.LogotypeImg{
     border: none;
+    display: inline-flex;
+    margin-top: 1.7%;
+    margin-left: 5px;
 }
-.LogotypeFull h1 {
-    margin-top: 3.5%;
+.LogotypeImg *{
+    margin-top: 2.2%;
 }
-.LogotypeMore {
-    display: flex;
+.LogotypeMore{
+    display: block;
+    margin-left: 2%;
 }
 
 /*Поле поиска*/
 * {box-sizing: border-box;}
-.LogotypeSearch form {
-    position: relative;
+.LogotypeSearch{
+    display: flex;
+}
+.LogotypeSearch form{
+    position: static;
     width: 300px;
     margin: 0 auto;
     height: 42px;
 }
-.LogotypeSearch button {
+.LogotypeSearch button{
     border: none;
     cursor: pointer;
     height: 42px;
@@ -58,7 +67,7 @@ body header {
     background-size: cover;
     background-color: transparent;
 }
-.LogotypeSearch input {
+.LogotypeSearch input{
     height: 42px;
     width: 0;
     padding: 0 42px 0 15px;
@@ -70,8 +79,39 @@ body header {
     border: none;
     z-index: 2;
 }
-.LogotypeSearch input:focus {
+.LogotypeSearch input:focus{
     width: 300px;
     z-index: 1;
     border-bottom: 2px solid #F9F0DA;
+}
+
+/*Кнопки навигации*/
+.Navigation{
+    display: flex;
+    position: relative;
+}
+.Navigation *{
+    margin-top: 0;
+    margin-right: 2%;
+    margin-left: 3.5%;
+}
+.NavThaumContentList{
+    display: none!important;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: max-content;
+    min-width: 8em;
+}
+.Navigation NavThaum:after{
+    transform: scaleY(1);
+    margin-left: 3px;
+    content: "";
+    display: block;
+    pointer-events: none;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    -webkit-mask-size: 100% 100%;
+    background-color: #e0b2ff;
 }
