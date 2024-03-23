@@ -1,52 +1,66 @@
-.roboto-regular {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-regular{
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.roboto-light {
+.roboto-light{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
-.roboto-bold {
+.roboto-bold{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
-body {
-    background-color: #841ca1;
+/* начало преобразований*/
+body{
+    background-color: #3c0e49;
 }
-body header {
-    background-color: #ffcaed;
-    height: 100px;                    g
+body header{
+    background-color: #e0b2ff;
+    height: 125;
     width: 100%;
-    top: 0;
 }
 
-.LogotypeFull {
+.LogotypeFull{
     display: inline-flex;
+    margin-bottom: 0;
+    height: 80%;
 }
-.LogotypeImg {
-    margin-left: 4%;
+.LogotypeImg{
     border: none;
+    display: inline-flex;
+    margin-top: 0.5%;
+    margin-left: 1%;
 }
-.LogotypeFull h1 {
+.LogotypeImg *{
+    margin-top: 2.2%;
+}
+.LogotypeMore{
+    display: block;
+    margin-left: 0.01%;
     margin-top: 3.5%;
-}
-.LogotypeMore {
-    display: flex;
 }
 
 /*Поле поиска*/
 * {box-sizing: border-box;}
-.LogotypeSearch form {
-    position: relative;
+.LogotypeSearch{
+    display: flex;
+}
+.LogotypeSearch form{
+    position: static;
     width: 300px;
     margin: 0 auto;
     height: 42px;
 }
-.LogotypeSearch button {
+.LogotypeSearch button{
     border: none;
     cursor: pointer;
     height: 42px;
@@ -58,7 +72,7 @@ body header {
     background-size: cover;
     background-color: transparent;
 }
-.LogotypeSearch input {
+.LogotypeSearch input{
     height: 42px;
     width: 0;
     padding: 0 42px 0 15px;
@@ -70,8 +84,60 @@ body header {
     border: none;
     z-index: 2;
 }
-.LogotypeSearch input:focus {
+.LogotypeSearch input:focus{
     width: 300px;
     z-index: 1;
     border-bottom: 2px solid #F9F0DA;
+}
+
+/*Кнопки навигации*/
+.Navigation{
+    display: flex;
+    position: relative;
+}
+.Navigation *{
+    margin-top: 0;
+    margin-right: 2%;
+    margin-left: 3.5%;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.Navigation ul{
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.Navigation li{
+    padding: 5px 20px;
+    padding-left: 5;
+    padding-right: 20px;
+}
+.Navigation li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.DroplinksThaumContent{
+    display: none;
+    position: fixed;
+    background-color: #e0b2ff;
+    min-width: 160px;
+    margin-left: -2%;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+    z-index: 1;
+}
+.DroplinksThaumContent a{
+    color: black;
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.DroplinksThaumContent a:hover{
+    background-color: #ae8bc5;
+}
+.ThaumcraftList:hover .DroplinksThaumContent{
+    display: block;
 }
